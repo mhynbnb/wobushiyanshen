@@ -75,7 +75,7 @@ for g10 in category_g10_list[:1]:
 		futures = [executor.submit(spider_task, category_name,chapter) for chapter in chapter_list]
 
 	# break
-'''
+
 print('获取小于10章的类别的章节....')
 for other in other_list:
 	category_name=other[0]
@@ -83,4 +83,3 @@ for other in other_list:
 	chapter_list=other[1:]
 	with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
 		futures = [executor.submit(spider_task, category_name, chapter) for chapter in chapter_list]
-'''
